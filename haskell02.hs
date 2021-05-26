@@ -1,2 +1,2 @@
 -- Prática 02 de Haskell
--- Nome: 
+-- Nome: Gabriel Vinícius Heisler
