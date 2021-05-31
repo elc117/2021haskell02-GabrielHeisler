@@ -14,7 +14,7 @@ itemize :: [String] -> [String]
 itemize str = map (\str -> "<li>" ++ str ++ "</li>") str
 
 areaMaior :: Float -> Float -> Bool
-areaMaior num r = r^2 * pi > num
+areaMaior num r = (r^2 * pi) > num
 
 bigCircles :: Float -> [Int] -> [Float]
 bigCircles num lista = filter areaMaior num lista
