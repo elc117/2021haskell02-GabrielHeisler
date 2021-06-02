@@ -19,3 +19,14 @@ areaMaior num r = (r^2 * pi) > num
 bigCircles :: Float -> [Float] -> [Float]
 bigCircles num lista = filter (areaMaior num) lista
 
+--quarentena :: [(String,Float)] -> [(String,Float)]
+--quarentena = 
+
+idadesEm :: [Int] -> Int -> [Int]
+idadesEm lst ano = map (\x -> ano - x) lst
+
+changeNames :: [String] -> [String]
+changeNames lst =[if head x == 'A' then "Super" ++ x else x | x <- lst]
+
+onlyShorts :: [String] -> [String]
+onlyShorts lst = filter (\str->length(str)<5) lst
