@@ -19,8 +19,8 @@ areaMaior num r = (r^2 * pi) > num
 bigCircles :: Float -> [Float] -> [Float]
 bigCircles num lista = filter (areaMaior num) lista
 
---quarentena :: [(String,Float)] -> [(String,Float)]
---quarentena = 
+quarentena :: [(String,Float)] -> [(String,Float)]
+quarentena lst = filter (\x -> snd x > 37.8) lst
 
 idadesEm :: [Int] -> Int -> [Int]
 idadesEm lst ano = map (\x -> ano - x) lst
